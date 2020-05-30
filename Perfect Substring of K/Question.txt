@@ -1,0 +1,88 @@
+A string s comprised of digits from 0 to 9 contains a perfect substring if all the elements within a substring occur exactly k times. Calculate the number of perfect substrings in s.
+
+ 
+
+ 
+
+Example
+
+s = 1102021222
+
+k = 2
+
+The 6 perfect substrings are:
+
+s[0:1] = 11
+s[0:5] = 110202
+s[1:6] = 102021
+s[2:5] = 0202
+s[7:8] = 22
+s[8:9] = 22
+ 
+Function Description
+
+Complete the function perfectSubstring in the editor below.
+
+ 
+
+perfectSubstring has the following parameters:
+
+    str s: a string where the value of each element s[i] is described by the character at position i (where 0 ≤ i < n)
+
+    int k: an integer that denotes the required frequency of the substring
+
+Output
+
+    int:  an integer that represents the number of perfect substrings in the given string
+
+ 
+
+Constraints
+
+1 ≤ sizeof(s) ≤ 105
+0 ≤ s[i] ≤ 9 (where 0 ≤ i < n)
+1 ≤ k ≤ 105
+ 
+
+Input Format For Custom Testing
+Sample Case 0
+Sample Input For Custom Testing
+
+STDIN         Function
+-----         --------
+1020122   →   s = '1020122' 
+2         →   k = 2
+Sample Output
+
+2
+Explanation
+
+ 
+
+Perfect substrings are:
+
+s[0:5] = 102012
+
+s[5:6] = 22
+
+Sample Case 1
+Sample Input For Custom Testing
+
+STDIN         Function 
+-----         -------- 
+1221221121 →  s = '1221221121'
+3          →  k = 3
+Sample Output
+
+3
+Explanation
+
+ 
+
+Perfect substrings are:
+
+s[2:7] = 212211
+
+s[3:8] = 122112 
+
+s[4:9] = 221121
